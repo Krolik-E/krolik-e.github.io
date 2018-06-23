@@ -1,0 +1,17 @@
+.create-comment {
+    display: flex;
+    align-items: flex-start;
+}
+
+.create-comment__pic {
+    padding: 26px;
+    margin-right: 15px;
+    background-color: #E6E6E6;
+}
+
+.create-comment__area {
+    resize: none;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    height: 70px;
+}

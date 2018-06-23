@@ -1,0 +1,14 @@
+<div class="comments-block">
+  <div class="comments-block__comments">
+    <h2 class="comments-block__header">Comments <span *ngIf="(activeItemIndexObserveble | async) !== null">#{{ (activeItemIndexObserveble | async) + 1 }}</span></h2>
+  </div>
+  <ul class="comments">
+      <li *ngFor="let comment of commentsObservable | async; even as ev" class="comment">
+        <div [ngClass]="{ 'comment__pic': true, 'comment__pic--even': !ev }"></div>
+        <p class="comment__text">{{ comment }}</p>
+      </li>
+  </ul>
+  <div class="comments-block__create">
+      <app-create-comment></app-create-comment>
+  </div>
+</div>

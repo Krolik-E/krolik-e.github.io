@@ -1,0 +1,50 @@
+.comments-block {
+    height: 100%;
+    padding: 13px 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-block__header {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    font-weight: 300;
+    color: #565A69;
+    margin-bottom: 22px;
+}
+
+.comments {
+    height: calc(100% - 112px);
+    display: block;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.comment {
+    padding: 15px 0 20px;
+    border-bottom: 1px solid #F2F2F2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.comment:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.comment__pic {
+    padding: 26px;
+    margin-right: 15px;
+    background-color: #FF8A00;
+}
+
+.comment__pic--even {
+    background-color: #47568C;
+}
+
+.comment__text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    word-break: break-word;
+}

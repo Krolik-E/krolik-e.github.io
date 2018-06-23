@@ -1,0 +1,36 @@
+.create-item {
+    display: flex;
+}
+
+.create-item__input {
+    border: 1px solid #CCCCCC;
+    color: #B3B3B3;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    padding: 9px;
+    margin-right: 10px;
+    min-width: 290px;
+    margin-left: 5px;
+    flex-grow: 1;
+}
+
+.create-item__input::-webkit-input-placeholder,
+.create-item__input::-moz-placeholder,
+.create-item__input:-ms-input-placeholder,
+.create-item__input:-moz-placeholder {
+    color: #B3B3B3;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+.button-main {
+    border-radius: 3px;
+    border: none;
+    background-color: #27CCC0;
+    color: #fff;
+    padding: 10px 32px;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}

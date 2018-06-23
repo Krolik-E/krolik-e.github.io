@@ -1,0 +1,13 @@
+<div class="items-block">
+  <h2 class="items-block__header">Items</h2>
+  <div class="items-block__create">
+    <app-create-item></app-create-item>
+  </div>
+  <ul class="items-block__list">
+    <li [ngClass]="{ 'item': true, 'item--active': item.active}" *ngFor='let item of itemsObservable | async; index as i' (click)="makeItemActive(i)">
+      <span class="item__name">{{ item.name }}</span>
+      <span class="item__counter">{{ item.comments.length }}</span>
+      <button type="button" class="button-delete" (click)="deleteItem(i)">Delete</button>
+    </li>
+  </ul>
+</div>

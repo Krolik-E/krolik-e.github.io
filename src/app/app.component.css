@@ -1,0 +1,27 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.main {
+    padding: 34px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.main__block {
+    border: 1px solid #f6f9f9;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 20px;
+    max-height: 100%;
+}
+
+.main__block:last-child {
+    margin-right: 0;
+    height: 100%;
+}
